@@ -1,0 +1,24 @@
+---
+- name: Backup show run (enable mode commands)
+  hosts: 192.168.0.4
+  gather_facts: false
+  connection: local
+
+  vars:
+    cli:
+      username: david
+      password: cisco
+
+  tasks:
+    - name: run enable level commands
+      ios_command:
+        username: david
+        password: cisco
+        authorize: yes
+        commands:
+          - wr
+        timeout: 40
+
+      register: print_output
+
+    -  debug: var=print_output.stdout_lines
