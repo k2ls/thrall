@@ -1,6 +1,6 @@
 ---
 - name: Backup show run (enable mode commands)
-  hosts: 192.168.0.4
+  hosts: Switch
   gather_facts: false
   connection: local
 
