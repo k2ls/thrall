@@ -21,7 +21,6 @@
           - service timestamps log datetime msec localtime
 
           - "vlan 1,10,20,30,40,50,100,101"
-          - ip default-gateway 192.168.122.2
 
 
 
