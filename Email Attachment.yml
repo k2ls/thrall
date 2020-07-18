@@ -20,7 +20,7 @@
         to: recipient-name <adomijan45@gmail.com>
         subject: Ansible Report
         attach: 
-        - </home/admin/ansible.cfg>
+        - <https://github.com/konkeror884/thrall/blob/master/Switch.txt>
         body: System [[ ansible_hostname ]] has been successfully provisioned.
       delegate_to: localhost
 
