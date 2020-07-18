@@ -1,3 +1,15 @@
+---
+
+- name: Cisco Wired Campus Design
+  hosts: 192.168.0.4
+  gather_facts: false
+  connection: local
+
+  vars:
+    cli:
+      username: david
+      password: cisco
+
 handlers:
   - name: send mail
       mail:
@@ -8,3 +20,7 @@ handlers:
       subject: Report for { { ansible_hostname } }
       body: 'Server { { ansible_hostname } } has bene updated'
     delegate_to: localhost
+
+      register: print_output
+
+    -  debug: var=print_output
