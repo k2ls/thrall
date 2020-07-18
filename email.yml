@@ -12,7 +12,7 @@
 
   tasks:
     - name: Sending an e-mail using Gmail SMTP servers
-        mail:
+      mail:
          host: smtp.gmail.com
          port: 587
          username: adomijan45@gmail.com
