@@ -19,7 +19,7 @@
         password: Gtdvwre884!
         to: recipient-name <adomijan45@gmail.com>
         subject: Ansible Report
-        attach: /home/admin/awx/test.yml
+        attach: /var/lib/awx/projects/test.txt
         body: System [[ ansible_hostname ]] has been successfully provisioned.
       delegate_to: localhost
 
