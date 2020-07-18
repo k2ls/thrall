@@ -13,12 +13,12 @@
 handlers:
   - name: send mail
       mail:
-      host: xxx.xxx.xxx.xxx
-      port: xxxxxxxx
-      sender: riyad1504@hotmail.co.uk
-      to: Riyad Ali <riyad15044@hotmail.co.uk>
+      host: 192.168.0.4
+      port: 25
+      sender: adomijan45@gmail.com
+      to: Alex Domijan <adomijan45@gmail.com>
       subject: Report for { { ansible_hostname } }
-      body: 'Server { { ansible_hostname } } has bene updated'
+      body: 'Server { { ansible_hostname } } has been updated'
     delegate_to: localhost
 
       register: print_output
