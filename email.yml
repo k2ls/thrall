@@ -10,8 +10,8 @@
       username: david
       password: cisco
 
--tasks:
-- name: Sending an e-mail using Gmail SMTP servers
+tasks:
+ - name: Sending an e-mail using Gmail SMTP servers
   mail:
     host: smtp.gmail.com
     port: 587
