@@ -1,0 +1,10 @@
+handlers:
+  - name: send mail
+      mail:
+      host: xxx.xxx.xxx.xxx
+      port: xxxxxxxx
+      sender: riyad1504@hotmail.co.uk
+      to: Riyad Ali <riyad15044@hotmail.co.uk>
+      subject: Report for { { ansible_hostname } }
+      body: 'Server { { ansible_hostname } } has bene updated'
+    delegate_to: localhost
