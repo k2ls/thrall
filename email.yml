@@ -10,16 +10,17 @@
       username: david
       password: cisco
 
-handlers:
-  - name: send mail
-      mail:
-      host: 192.168.0.4
-      port: 25
-      sender: adomijan45@gmail.com
-      to: Alex Domijan <adomijan45@gmail.com>
-      subject: Report for { { ansible_hostname } }
-      body: 'Server { { ansible_hostname } } has been updated'
-    delegate_to: localhost
+-tasks:
+- name: Sending an e-mail using Gmail SMTP servers
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: adomijan45@gmail.com
+    password: mysecret
+    to: Alex Domijan <adomijan45@gmail.com>
+    subject: Ansible-report
+    body: System {{ ansible_hostname }} has been successfully provisioned.
+  delegate_to: localhost
 
       register: print_output
 
