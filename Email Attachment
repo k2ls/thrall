@@ -16,11 +16,11 @@
         host: smtp.gmail.com
         port: 587
         username: adomijan45@gmail.com
-        password: 
+        password: Gtdvwre884!
         to: recipient-name <adomijan45@gmail.com>
         subject: Ansible Report
         attach: 
-        - <https://github.com/konkeror884/thrall/tree/master>
+        - <https://github.com/konkeror884/thrall/blob/master/Switch.txt>
         body: System [[ ansible_hostname ]] has been successfully provisioned.
       delegate_to: localhost
 
