@@ -1,8 +1,14 @@
 ---
 
 - name: Cisco Wired Campus Design
+  hosts: S1
   gather_facts: false
   connection: local
+
+  vars:
+    cli:
+      username: david
+      password: cisco
 
   tasks:
     - name: EMAIL
