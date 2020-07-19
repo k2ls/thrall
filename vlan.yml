@@ -1,7 +1,7 @@
 ---
 
 - name: Cisco Wired Campus Design
-  hosts: S1
+  hosts: Switches
   gather_facts: false
   connection: local
 
