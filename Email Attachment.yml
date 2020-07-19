@@ -1,7 +1,7 @@
 ---
 
 - name: Cisco Wired Campus Design
-  hosts: 192.168.0.4
+  hosts: S1
   gather_facts: false
   connection: local
 
@@ -16,13 +16,12 @@
         host: smtp.gmail.com
         port: 587
         username: adomijan45@gmail.com
-        password: 
+        password: Gtdvwre884!
         to: recipient-name <adomijan45@gmail.com>
         subject: Ansible Report
-        attach: flash:/config.text
+        attach: /home/admin/awx/test.txt
         body: System [[ ansible_hostname ]] has been successfully provisioned.
       delegate_to: localhost
-
 
 
 
