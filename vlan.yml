@@ -2,7 +2,7 @@
 
 - name: Cisco Wired Campus Design
   hosts: S1
-  gather_facts: false
+  gather_facts: true
 
   vars:
     cli:
