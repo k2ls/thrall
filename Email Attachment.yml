@@ -16,7 +16,7 @@
         host: smtp.gmail.com
         port: 587
         username: gimlithegray@gmail.com
-        password: Punisher91!
+        password: 
         to: recipient-name <adomijan45@gmail.com>
         subject: Ansible Report
         attach: 
