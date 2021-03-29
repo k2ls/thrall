@@ -15,9 +15,9 @@
       mail:
         host: smtp.gmail.com
         port: 587
-        username: adomijan45@gmail.com
+        username: xxx
         password: 
-        to: recipient-name <adomijan45@gmail.com>
+        to: recipient-name <xxx>
         subject: Ansible Report
         body: System [[ ansible_hostname ]] has been successfully provisioned.
       delegate_to: localhost
